@@ -1,0 +1,1186 @@
+local AstroLibrary = {}
+
+function AstroLibrary:Init()
+	local Astro = Instance.new("ScreenGui")
+	local Main = Instance.new("ScreenGui")
+	local Movement = Instance.new("Frame")
+	local Title = Instance.new("TextLabel")
+	local UICorner = Instance.new("UICorner")
+	local Bottom = Instance.new("Frame")
+	local Dorpdown = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local Combat = Instance.new("Frame")
+	local Title_2 = Instance.new("TextLabel")
+	local UICorner_2 = Instance.new("UICorner")
+	local Bottom_2 = Instance.new("Frame")
+	local Dorpdown_2 = Instance.new("Frame")
+	local UIListLayout_2 = Instance.new("UIListLayout")
+	local Unility = Instance.new("Frame")
+	local Title_3 = Instance.new("TextLabel")
+	local UICorner_3 = Instance.new("UICorner")
+	local Bottom_3 = Instance.new("Frame")
+	local Dorpdown_3 = Instance.new("Frame")
+	local UIListLayout_3 = Instance.new("UIListLayout")
+	local Visuals = Instance.new("Frame")
+	local Title_4 = Instance.new("TextLabel")
+	local UICorner_4 = Instance.new("UICorner")
+	local Bottom_4 = Instance.new("Frame")
+	local Dorpdown_4 = Instance.new("Frame")
+	local UIListLayout_4 = Instance.new("UIListLayout")
+	local World = Instance.new("Frame")
+	local Title_5 = Instance.new("TextLabel")
+	local UICorner_5 = Instance.new("UICorner")
+	local Bottom_5 = Instance.new("Frame")
+	local Dorpdown_5 = Instance.new("Frame")
+	local UIListLayout_5 = Instance.new("UIListLayout")
+	local AtrsoClient = Instance.new("Frame")
+	local Title_6 = Instance.new("TextLabel")
+	local UICorner_6 = Instance.new("UICorner")
+	local Bottom_6 = Instance.new("Frame")
+	local Dorpdown_6 = Instance.new("Frame")
+	local UIListLayout_6 = Instance.new("UIListLayout")
+	local Combat_2 = Instance.new("TextButton")
+	local Color = Instance.new("Frame")
+	local Title_7 = Instance.new("TextLabel")
+	local Movement_2 = Instance.new("TextButton")
+	local Color_2 = Instance.new("Frame")
+	local Title_8 = Instance.new("TextLabel")
+	local Visuals_2 = Instance.new("TextButton")
+	local Color_3 = Instance.new("Frame")
+	local Title_9 = Instance.new("TextLabel")
+	local Unility_2 = Instance.new("TextButton")
+	local Color_4 = Instance.new("Frame")
+	local Title_10 = Instance.new("TextLabel")
+	local World_2 = Instance.new("TextButton")
+	local Color_5 = Instance.new("Frame")
+	local Title_11 = Instance.new("TextLabel")
+	local AstroClient = Instance.new("TextLabel")
+	
+	Astro.Name = "Astro"
+	Astro.Parent = game.CoreGui
+	Astro.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Main.Name = "Main"
+	Main.Parent = Astro
+	Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Movement.Name = "Movement"
+	Movement.Parent = Main
+	Movement.BackgroundColor3 = Color3.fromRGB(65, 130, 195)
+	Movement.Position = UDim2.new(0.296663195, 0, 0.141975299, 0)
+	Movement.Size = UDim2.new(0, 153, 0, 50)
+
+	Title.Name = "Title"
+	Title.Parent = Movement
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.BackgroundTransparency = 1.000
+	Title.Position = UDim2.new(0.0261437912, 0, 0, 0)
+	Title.Size = UDim2.new(0, 99, 0, 50)
+	Title.Font = Enum.Font.Unknown
+	Title.Text = "Movement"
+	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title.TextScaled = true
+	Title.TextSize = 14.000
+	Title.TextWrapped = true
+
+	UICorner.CornerRadius = UDim.new(0, 3)
+	UICorner.Parent = Movement
+
+	Bottom.Name = "Bottom"
+	Bottom.Parent = Movement
+	Bottom.BackgroundColor3 = Color3.fromRGB(60, 121, 181)
+	Bottom.BorderSizePixel = 0
+	Bottom.Position = UDim2.new(0, 0, 0.879999995, 0)
+	Bottom.Size = UDim2.new(0, 153, 0, 6)
+
+	Dorpdown.Name = "Dorpdown"
+	Dorpdown.Parent = Movement
+	Dorpdown.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Dorpdown.BackgroundTransparency = 0.500
+	Dorpdown.BorderSizePixel = 0
+	Dorpdown.Position = UDim2.new(0, 0, 1, 0)
+	Dorpdown.Size = UDim2.new(0, 153, 0, 443)
+
+	UIListLayout.Parent = Dorpdown
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+	Combat.Name = "Combat"
+	Combat.Parent = Main
+	Combat.BackgroundColor3 = Color3.fromRGB(65, 130, 195)
+	Combat.Position = UDim2.new(0.198644429, 0, 0.141975299, 0)
+	Combat.Size = UDim2.new(0, 153, 0, 50)
+
+	Title_2.Name = "Title"
+	Title_2.Parent = Combat
+	Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_2.BackgroundTransparency = 1.000
+	Title_2.Position = UDim2.new(0.0261437893, 0, -0.0199999996, 0)
+	Title_2.Size = UDim2.new(0, 99, 0, 50)
+	Title_2.Font = Enum.Font.Unknown
+	Title_2.Text = "Combat"
+	Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_2.TextScaled = true
+	Title_2.TextSize = 14.000
+	Title_2.TextWrapped = true
+
+	UICorner_2.CornerRadius = UDim.new(0, 3)
+	UICorner_2.Parent = Combat
+
+	Bottom_2.Name = "Bottom"
+	Bottom_2.Parent = Combat
+	Bottom_2.BackgroundColor3 = Color3.fromRGB(60, 121, 181)
+	Bottom_2.BorderSizePixel = 0
+	Bottom_2.Position = UDim2.new(0, 0, 0.879999995, 0)
+	Bottom_2.Size = UDim2.new(0, 153, 0, 6)
+
+	Dorpdown_2.Name = "Dorpdown"
+	Dorpdown_2.Parent = Combat
+	Dorpdown_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Dorpdown_2.BackgroundTransparency = 0.500
+	Dorpdown_2.BorderSizePixel = 0
+	Dorpdown_2.Position = UDim2.new(0, 0, 1, 0)
+	Dorpdown_2.Size = UDim2.new(0, 153, 0, 443)
+
+	UIListLayout_2.Parent = Dorpdown_2
+	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+	Unility.Name = "Unility"
+	Unility.Parent = Main
+	Unility.BackgroundColor3 = Color3.fromRGB(65, 130, 195)
+	Unility.Position = UDim2.new(0.498957247, 0, 0.140740737, 0)
+	Unility.Size = UDim2.new(0, 153, 0, 50)
+
+	Title_3.Name = "Title"
+	Title_3.Parent = Unility
+	Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_3.BackgroundTransparency = 1.000
+	Title_3.Position = UDim2.new(0.0261437912, 0, 0, 0)
+	Title_3.Size = UDim2.new(0, 99, 0, 50)
+	Title_3.Font = Enum.Font.Unknown
+	Title_3.Text = "Unility"
+	Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_3.TextScaled = true
+	Title_3.TextSize = 14.000
+	Title_3.TextWrapped = true
+
+	UICorner_3.CornerRadius = UDim.new(0, 3)
+	UICorner_3.Parent = Unility
+
+	Bottom_3.Name = "Bottom"
+	Bottom_3.Parent = Unility
+	Bottom_3.BackgroundColor3 = Color3.fromRGB(60, 121, 181)
+	Bottom_3.BorderSizePixel = 0
+	Bottom_3.Position = UDim2.new(0, 0, 0.879999995, 0)
+	Bottom_3.Size = UDim2.new(0, 153, 0, 6)
+
+	Dorpdown_3.Name = "Dorpdown"
+	Dorpdown_3.Parent = Unility
+	Dorpdown_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Dorpdown_3.BackgroundTransparency = 0.500
+	Dorpdown_3.BorderSizePixel = 0
+	Dorpdown_3.Position = UDim2.new(0, 0, 1, 0)
+	Dorpdown_3.Size = UDim2.new(0, 153, 0, 443)
+
+	UIListLayout_3.Parent = Dorpdown_3
+	UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+	Visuals.Name = "Visuals"
+	Visuals.Parent = Main
+	Visuals.BackgroundColor3 = Color3.fromRGB(65, 130, 195)
+	Visuals.Position = UDim2.new(0.400938481, 0, 0.140740737, 0)
+	Visuals.Size = UDim2.new(0, 153, 0, 50)
+
+	Title_4.Name = "Title"
+	Title_4.Parent = Visuals
+	Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_4.BackgroundTransparency = 1.000
+	Title_4.Position = UDim2.new(0.0261437893, 0, -0.0199999996, 0)
+	Title_4.Size = UDim2.new(0, 99, 0, 50)
+	Title_4.Font = Enum.Font.Unknown
+	Title_4.Text = "Visuals"
+	Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_4.TextScaled = true
+	Title_4.TextSize = 14.000
+	Title_4.TextWrapped = true
+
+	UICorner_4.CornerRadius = UDim.new(0, 3)
+	UICorner_4.Parent = Visuals
+
+	Bottom_4.Name = "Bottom"
+	Bottom_4.Parent = Visuals
+	Bottom_4.BackgroundColor3 = Color3.fromRGB(60, 121, 181)
+	Bottom_4.BorderSizePixel = 0
+	Bottom_4.Position = UDim2.new(0, 0, 0.879999995, 0)
+	Bottom_4.Size = UDim2.new(0, 153, 0, 6)
+
+	Dorpdown_4.Name = "Dorpdown"
+	Dorpdown_4.Parent = Visuals
+	Dorpdown_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Dorpdown_4.BackgroundTransparency = 0.500
+	Dorpdown_4.BorderSizePixel = 0
+	Dorpdown_4.Position = UDim2.new(0, 0, 1, 0)
+	Dorpdown_4.Size = UDim2.new(0, 153, 0, 443)
+
+	UIListLayout_4.Parent = Dorpdown_4
+	UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+	World.Name = "World"
+	World.Parent = Main
+	World.BackgroundColor3 = Color3.fromRGB(65, 130, 195)
+	World.Position = UDim2.new(0.601668417, 0, 0.145679012, 0)
+	World.Size = UDim2.new(0, 153, 0, 50)
+
+	Title_5.Name = "Title"
+	Title_5.Parent = World
+	Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_5.BackgroundTransparency = 1.000
+	Title_5.Position = UDim2.new(0.0261437912, 0, 0, 0)
+	Title_5.Size = UDim2.new(0, 99, 0, 50)
+	Title_5.Font = Enum.Font.Unknown
+	Title_5.Text = "World"
+	Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_5.TextScaled = true
+	Title_5.TextSize = 14.000
+	Title_5.TextWrapped = true
+
+	UICorner_5.CornerRadius = UDim.new(0, 3)
+	UICorner_5.Parent = World
+
+	Bottom_5.Name = "Bottom"
+	Bottom_5.Parent = World
+	Bottom_5.BackgroundColor3 = Color3.fromRGB(60, 121, 181)
+	Bottom_5.BorderSizePixel = 0
+	Bottom_5.Position = UDim2.new(0, 0, 0.879999995, 0)
+	Bottom_5.Size = UDim2.new(0, 153, 0, 6)
+
+	Dorpdown_5.Name = "Dorpdown"
+	Dorpdown_5.Parent = World
+	Dorpdown_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Dorpdown_5.BackgroundTransparency = 0.500
+	Dorpdown_5.BorderSizePixel = 0
+	Dorpdown_5.Position = UDim2.new(0, 0, 1, 0)
+	Dorpdown_5.Size = UDim2.new(0, 153, 0, 443)
+
+	UIListLayout_5.Parent = Dorpdown_5
+	UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+
+	AtrsoClient.Name = "Atrso Client"
+	AtrsoClient.Parent = Main
+	AtrsoClient.BackgroundColor3 = Color3.fromRGB(65, 130, 195)
+	AtrsoClient.Position = UDim2.new(0.0802919865, 0, 0.145678997, 0)
+	AtrsoClient.Size = UDim2.new(0, 153, 0, 50)
+
+	Title_6.Name = "Title"
+	Title_6.Parent = AtrsoClient
+	Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_6.BackgroundTransparency = 1.000
+	Title_6.Position = UDim2.new(-9.68575478e-08, 0, -0.0599999987, 0)
+	Title_6.Size = UDim2.new(0, 151, 0, 50)
+	Title_6.Font = Enum.Font.Unknown
+	Title_6.Text = "Atrso Client"
+	Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_6.TextSize = 23.000
+	Title_6.TextWrapped = true
+
+	UICorner_6.CornerRadius = UDim.new(0, 3)
+	UICorner_6.Parent = AtrsoClient
+
+	Bottom_6.Name = "Bottom"
+	Bottom_6.Parent = AtrsoClient
+	Bottom_6.BackgroundColor3 = Color3.fromRGB(60, 121, 181)
+	Bottom_6.BorderSizePixel = 0
+	Bottom_6.Position = UDim2.new(0, 0, 0.879999995, 0)
+	Bottom_6.Size = UDim2.new(0, 153, 0, 6)
+
+	Dorpdown_6.Name = "Dorpdown"
+	Dorpdown_6.Parent = AtrsoClient
+	Dorpdown_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Dorpdown_6.BackgroundTransparency = 0.500
+	Dorpdown_6.BorderSizePixel = 0
+	Dorpdown_6.Position = UDim2.new(0, 0, 1, 0)
+	Dorpdown_6.Size = UDim2.new(0, 153, 0, 443)
+
+	UIListLayout_6.Parent = Dorpdown_6
+	UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+
+	Combat_2.Name = "Combat"
+	Combat_2.Parent = Dorpdown_6
+	Combat_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Combat_2.BackgroundTransparency = 0.800
+	Combat_2.BorderSizePixel = 0
+	Combat_2.Size = UDim2.new(0, 153, 0, 37)
+	Combat_2.AutoButtonColor = false
+	Combat_2.Font = Enum.Font.Code
+	Combat_2.Text = " "
+	Combat_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Combat_2.TextScaled = true
+	Combat_2.TextSize = 14.000
+	Combat_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Combat_2.TextWrapped = true
+
+	Color.Name = "Color"
+	Color.Parent = Combat_2
+	Color.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+	Color.BorderSizePixel = 0
+	Color.Size = UDim2.new(0, 153, 0, 37)
+
+	Title_7.Name = "Title"
+	Title_7.Parent = Combat_2
+	Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_7.BackgroundTransparency = 1.000
+	Title_7.Position = UDim2.new(0.0261437912, 0, 0.0810810775, 0)
+	Title_7.Size = UDim2.new(0, 149, 0, 30)
+	Title_7.Font = Enum.Font.Code
+	Title_7.Text = "Combat"
+	Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_7.TextScaled = true
+	Title_7.TextSize = 14.000
+	Title_7.TextWrapped = true
+	Title_7.TextXAlignment = Enum.TextXAlignment.Left
+
+	Movement_2.Name = "Movement"
+	Movement_2.Parent = Dorpdown_6
+	Movement_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Movement_2.BackgroundTransparency = 0.800
+	Movement_2.BorderSizePixel = 0
+	Movement_2.Size = UDim2.new(0, 153, 0, 37)
+	Movement_2.AutoButtonColor = false
+	Movement_2.Font = Enum.Font.Code
+	Movement_2.Text = " "
+	Movement_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Movement_2.TextScaled = true
+	Movement_2.TextSize = 14.000
+	Movement_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Movement_2.TextWrapped = true
+
+	Color_2.Name = "Color"
+	Color_2.Parent = Movement_2
+	Color_2.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+	Color_2.BorderSizePixel = 0
+	Color_2.Size = UDim2.new(0, 153, 0, 37)
+
+	Title_8.Name = "Title"
+	Title_8.Parent = Movement_2
+	Title_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_8.BackgroundTransparency = 1.000
+	Title_8.Position = UDim2.new(0.0261437912, 0, 0.0810810775, 0)
+	Title_8.Size = UDim2.new(0, 149, 0, 30)
+	Title_8.Font = Enum.Font.Code
+	Title_8.Text = "Movement"
+	Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_8.TextScaled = true
+	Title_8.TextSize = 14.000
+	Title_8.TextWrapped = true
+	Title_8.TextXAlignment = Enum.TextXAlignment.Left
+
+	Visuals_2.Name = "Visuals"
+	Visuals_2.Parent = Dorpdown_6
+	Visuals_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Visuals_2.BackgroundTransparency = 0.800
+	Visuals_2.BorderSizePixel = 0
+	Visuals_2.Size = UDim2.new(0, 153, 0, 37)
+	Visuals_2.AutoButtonColor = false
+	Visuals_2.Font = Enum.Font.Code
+	Visuals_2.Text = " "
+	Visuals_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Visuals_2.TextScaled = true
+	Visuals_2.TextSize = 14.000
+	Visuals_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Visuals_2.TextWrapped = true
+
+	Color_3.Name = "Color"
+	Color_3.Parent = Visuals_2
+	Color_3.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+	Color_3.BorderSizePixel = 0
+	Color_3.Size = UDim2.new(0, 153, 0, 37)
+
+	Title_9.Name = "Title"
+	Title_9.Parent = Visuals_2
+	Title_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_9.BackgroundTransparency = 1.000
+	Title_9.Position = UDim2.new(0.0261437912, 0, 0.0810810775, 0)
+	Title_9.Size = UDim2.new(0, 149, 0, 30)
+	Title_9.Font = Enum.Font.Code
+	Title_9.Text = "Viusals"
+	Title_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_9.TextScaled = true
+	Title_9.TextSize = 14.000
+	Title_9.TextWrapped = true
+	Title_9.TextXAlignment = Enum.TextXAlignment.Left
+
+	Unility_2.Name = "Unility"
+	Unility_2.Parent = Dorpdown_6
+	Unility_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Unility_2.BackgroundTransparency = 0.800
+	Unility_2.BorderSizePixel = 0
+	Unility_2.Size = UDim2.new(0, 153, 0, 37)
+	Unility_2.AutoButtonColor = false
+	Unility_2.Font = Enum.Font.Code
+	Unility_2.Text = " "
+	Unility_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Unility_2.TextScaled = true
+	Unility_2.TextSize = 14.000
+	Unility_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Unility_2.TextWrapped = true
+
+	Color_4.Name = "Color"
+	Color_4.Parent = Unility_2
+	Color_4.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+	Color_4.BorderSizePixel = 0
+	Color_4.Size = UDim2.new(0, 153, 0, 37)
+
+	Title_10.Name = "Title"
+	Title_10.Parent = Unility_2
+	Title_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_10.BackgroundTransparency = 1.000
+	Title_10.Position = UDim2.new(0.0261437912, 0, 0.0810810775, 0)
+	Title_10.Size = UDim2.new(0, 149, 0, 30)
+	Title_10.Font = Enum.Font.Code
+	Title_10.Text = "Unility"
+	Title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_10.TextScaled = true
+	Title_10.TextSize = 14.000
+	Title_10.TextWrapped = true
+	Title_10.TextXAlignment = Enum.TextXAlignment.Left
+
+	World_2.Name = "World"
+	World_2.Parent = Dorpdown_6
+	World_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	World_2.BackgroundTransparency = 0.800
+	World_2.BorderSizePixel = 0
+	World_2.Size = UDim2.new(0, 153, 0, 37)
+	World_2.AutoButtonColor = false
+	World_2.Font = Enum.Font.Code
+	World_2.Text = " "
+	World_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	World_2.TextScaled = true
+	World_2.TextSize = 14.000
+	World_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	World_2.TextWrapped = true
+
+	Color_5.Name = "Color"
+	Color_5.Parent = World_2
+	Color_5.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+	Color_5.BorderSizePixel = 0
+	Color_5.Size = UDim2.new(0, 153, 0, 37)
+
+	Title_11.Name = "Title"
+	Title_11.Parent = World_2
+	Title_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_11.BackgroundTransparency = 1.000
+	Title_11.Position = UDim2.new(0.0261437912, 0, 0.0810810775, 0)
+	Title_11.Size = UDim2.new(0, 149, 0, 30)
+	Title_11.Font = Enum.Font.Code
+	Title_11.Text = "World"
+	Title_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_11.TextScaled = true
+	Title_11.TextSize = 14.000
+	Title_11.TextWrapped = true
+	Title_11.TextXAlignment = Enum.TextXAlignment.Left
+
+	AstroClient.Name = "Astro Client"
+	AstroClient.Parent = Astro
+	AstroClient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	AstroClient.BackgroundTransparency = 1.000
+	AstroClient.Position = UDim2.new(0.00469238777, 0, 0.0123456791, 0)
+	AstroClient.Size = UDim2.new(0, 200, 0, 50)
+	AstroClient.Font = Enum.Font.Unknown
+	AstroClient.Text = "Astro Client"
+	AstroClient.TextColor3 = Color3.fromRGB(85, 170, 255)
+	AstroClient.TextScaled = true
+	AstroClient.TextSize = 14.000
+	AstroClient.TextWrapped = true
+
+	local function QDUMCH_fake_script() -- Movement.Novis 
+		local script = Instance.new('LocalScript', Movement)
+
+		script.Parent.Visible = false
+	end
+	coroutine.wrap(QDUMCH_fake_script)()
+	local function AELWI_fake_script() -- Movement.Dragify 
+		local script = Instance.new('LocalScript', Movement)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local dragToggle
+		local dragInput
+		local dragSpeed
+		local dragStart
+		local dragPos
+		local startPos
+
+		function dragify(Frame)
+			dragToggle = nil
+			dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			local function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(AELWI_fake_script)()
+	local function FFIVX_fake_script() -- Combat.Novis 
+		local script = Instance.new('LocalScript', Combat)
+
+		script.Parent.Visible = false
+	end
+	coroutine.wrap(FFIVX_fake_script)()
+	local function QTBWZW_fake_script() -- Combat.Dragify 
+		local script = Instance.new('LocalScript', Combat)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local dragToggle
+		local dragInput
+		local dragSpeed
+		local dragStart
+		local dragPos
+		local startPos
+
+		function dragify(Frame)
+			dragToggle = nil
+			dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			local function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(QTBWZW_fake_script)()
+	local function YVJS_fake_script() -- Unility.Novis 
+		local script = Instance.new('LocalScript', Unility)
+
+		script.Parent.Visible = false
+	end
+	coroutine.wrap(YVJS_fake_script)()
+	local function XAOFJ_fake_script() -- Unility.Dragify 
+		local script = Instance.new('LocalScript', Unility)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local dragToggle
+		local dragInput
+		local dragSpeed
+		local dragStart
+		local dragPos
+		local startPos
+
+		function dragify(Frame)
+			dragToggle = nil
+			dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			local function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(XAOFJ_fake_script)()
+	local function LQQJQ_fake_script() -- Visuals.Novis 
+		local script = Instance.new('LocalScript', Visuals)
+
+		script.Parent.Visible = false
+	end
+	coroutine.wrap(LQQJQ_fake_script)()
+	local function VAHLQLV_fake_script() -- Visuals.Dragify 
+		local script = Instance.new('LocalScript', Visuals)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local dragToggle
+		local dragInput
+		local dragSpeed
+		local dragStart
+		local dragPos
+		local startPos
+
+		function dragify(Frame)
+			dragToggle = nil
+			dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			local function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(VAHLQLV_fake_script)()
+	local function SRIT_fake_script() -- World.Novis 
+		local script = Instance.new('LocalScript', World)
+
+		script.Parent.Visible = false
+	end
+	coroutine.wrap(SRIT_fake_script)()
+	local function TQSYCSP_fake_script() -- World.Dragify 
+		local script = Instance.new('LocalScript', World)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local dragToggle
+		local dragInput
+		local dragSpeed
+		local dragStart
+		local dragPos
+		local startPos
+
+		function dragify(Frame)
+			dragToggle = nil
+			dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			local function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(TQSYCSP_fake_script)()
+	local function UVZANTP_fake_script() -- Combat_2.Main 
+		local script = Instance.new('LocalScript', Combat_2)
+
+		local Button = script.Parent
+		local Color = Button.Color
+		local tab = script.Parent.Parent.Parent.Parent:FindFirstChild(script.Parent.Name)
+		local TweanSerivce = game.TweenService
+
+		local toggle = false
+
+		Button.MouseEnter:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+		Button.MouseLeave:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+
+
+
+		Button.MouseButton1Click:Connect(function()
+			if toggle then
+				toggle = false
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			else
+				toggle = true
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			end
+		end)
+
+	end
+	coroutine.wrap(UVZANTP_fake_script)()
+	local function JKMC_fake_script() -- Movement_2.Main 
+		local script = Instance.new('LocalScript', Movement_2)
+
+		local Button = script.Parent
+		local Color = Button.Color
+		local tab = script.Parent.Parent.Parent.Parent:FindFirstChild(script.Parent.Name)
+		local TweanSerivce = game.TweenService
+
+		local toggle = false
+
+		Button.MouseEnter:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+		Button.MouseLeave:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+
+
+
+		Button.MouseButton1Click:Connect(function()
+			if toggle then
+				toggle = false
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			else
+				toggle = true
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			end
+		end)
+
+	end
+	coroutine.wrap(JKMC_fake_script)()
+	local function KTFC_fake_script() -- Visuals_2.Main 
+		local script = Instance.new('LocalScript', Visuals_2)
+
+		local Button = script.Parent
+		local Color = Button.Color
+		local tab = script.Parent.Parent.Parent.Parent:FindFirstChild(script.Parent.Name)
+		local TweanSerivce = game.TweenService
+
+		local toggle = false
+
+		Button.MouseEnter:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+		Button.MouseLeave:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+
+
+
+		Button.MouseButton1Click:Connect(function()
+			if toggle then
+				toggle = false
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			else
+				toggle = true
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			end
+		end)
+
+	end
+	coroutine.wrap(KTFC_fake_script)()
+	local function ECAFQ_fake_script() -- Unility_2.Main 
+		local script = Instance.new('LocalScript', Unility_2)
+
+		local Button = script.Parent
+		local Color = Button.Color
+		local tab = script.Parent.Parent.Parent.Parent:FindFirstChild(script.Parent.Name)
+		local TweanSerivce = game.TweenService
+
+		local toggle = false
+
+		Button.MouseEnter:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+		Button.MouseLeave:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+
+
+
+		Button.MouseButton1Click:Connect(function()
+			if toggle then
+				toggle = false
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			else
+				toggle = true
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			end
+		end)
+
+	end
+	coroutine.wrap(ECAFQ_fake_script)()
+	local function ULHG_fake_script() -- World_2.Main 
+		local script = Instance.new('LocalScript', World_2)
+
+		local Button = script.Parent
+		local Color = Button.Color
+		local tab = script.Parent.Parent.Parent.Parent:FindFirstChild(script.Parent.Name)
+		local TweanSerivce = game.TweenService
+
+		local toggle = false
+
+		Button.MouseEnter:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+		Button.MouseLeave:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+
+
+
+		Button.MouseButton1Click:Connect(function()
+			if toggle then
+				toggle = false
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			else
+				toggle = true
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				tab.Visible = toggle
+			end
+		end)
+
+	end
+	coroutine.wrap(ULHG_fake_script)()
+	local function JSBAG_fake_script() -- AtrsoClient.Dragify 
+		local script = Instance.new('LocalScript', AtrsoClient)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local dragToggle
+		local dragInput
+		local dragSpeed
+		local dragStart
+		local dragPos
+		local startPos
+
+		function dragify(Frame)
+			dragToggle = nil
+			dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			local function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(JSBAG_fake_script)()
+	local function VUFFLN_fake_script() -- Main.ON/OFF 
+		local script = Instance.new('LocalScript', Main)
+
+		local uis = game:GetService("UserInputService")
+		script.Parent.Enabled = false
+
+		uis.InputBegan:Connect(function(input,proc)
+			if input.KeyCode == Enum.KeyCode.RightShift then
+				if script.Parent.Enabled == true then
+					script.Parent.Enabled = false
+				else
+					script.Parent.Enabled = true
+				end
+			end
+		end)
+	end
+	coroutine.wrap(VUFFLN_fake_script)()
+	local function JJJDDPB_fake_script() -- AstroClient.Dragify 
+		local script = Instance.new('LocalScript', AstroClient)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local dragToggle
+		local dragInput
+		local dragSpeed
+		local dragStart
+		local dragPos
+		local startPos
+
+		function dragify(Frame)
+			dragToggle = nil
+			dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			dragPos = nil
+			local function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(JJJDDPB_fake_script)()
+end
+
+
+--Properties:
+
+function AstroLibrary.CreateButton(Title,Tab,Function)
+	local Template = Instance.new("TextButton")
+	local Color_6 = Instance.new("Frame")
+	local Title_12 = Instance.new("TextLabel")
+	
+	Template.Name = Title
+	if Tab == "Combat" then
+		Template.Parent = game.CoreGui.Astro.Main.Combat.Dorpdown
+	elseif Tab == "Movement" then
+		Template.Parent = game.CoreGui.Astro.Main.Movement.Dorpdown
+	elseif Tab == "Unility" then
+		Template.Parent = game.CoreGui.Astro.Main.Unility.Dorpdown
+	elseif Tab == "Visuals" then
+		Template.Parent = game.CoreGui.Astro.Main.Visuals.Dorpdown
+	elseif Tab == "World" then
+		Template.Parent = game.CoreGui.Astro.Main.World.Dorpdown
+	end
+	Template.Visible = true
+	Template.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Template.BackgroundTransparency = 0.800
+	Template.BorderSizePixel = 0
+	Template.Size = UDim2.new(0, 153, 0, 37)
+	Template.AutoButtonColor = false
+	Template.Font = Enum.Font.Code
+	Template.Text = " "
+	Template.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Template.TextScaled = true
+	Template.TextSize = 14.000
+	Template.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Template.TextWrapped = true
+
+	Color_6.Name = "Color"
+	Color_6.Parent = Template
+	Color_6.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+	Color_6.BorderSizePixel = 0
+	Color_6.Size = UDim2.new(0, 153, 0, 37)
+
+	Title_12.Name = "Title"
+	Title_12.Parent = Template
+	Title_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title_12.BackgroundTransparency = 1.000
+	Title_12.Position = UDim2.new(0.0261437912, 0, 0.0810810775, 0)
+	Title_12.Size = UDim2.new(0, 149, 0, 30)
+	Title_12.Font = Enum.Font.Code
+	Title_12.Text = Title
+	Title_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title_12.TextScaled = true
+	Title_12.TextSize = 14.000
+	Title_12.TextWrapped = true
+	Title_12.TextXAlignment = Enum.TextXAlignment.Left
+
+	-- Scripts:
+
+
+
+	local function LNJJJOQ_fake_script() -- Template.Main 
+		local script = Instance.new('LocalScript', Template)
+
+		local Button = script.Parent
+		local Color = Button.Color
+
+		local TweanSerivce = game.TweenService
+
+		local toggle = false
+
+		Button.MouseEnter:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+		Button.MouseLeave:Connect(function()
+			if not toggle then
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+			end
+		end)
+
+
+
+
+		Button.MouseButton1Click:Connect(function()
+			if toggle then
+				toggle = false
+				Color:TweenSize(UDim2.new(0, 153,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				Function(toggle)
+			else
+				toggle = true
+				Color:TweenSize(UDim2.new(0, 4,0, 37),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,0.3,true)
+				Function(toggle)
+			end
+		end)
+
+	end
+	coroutine.wrap(LNJJJOQ_fake_script)()
+end
+
